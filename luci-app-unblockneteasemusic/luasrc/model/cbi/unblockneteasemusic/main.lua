@@ -1,6 +1,6 @@
 local m, s, o
 
-m = Map("unblockneteasemusic", translate("解除网易云音乐播放限制"))
+m = Map("unblockneteasemusic", translate("网易云解锁"))
 m.description = translate("原理：采用 [Bilibili/JOOX/酷狗/酷我/咪咕/pyncmd/QQ/Youtube] 等音源，替换网易云音乐 无版权/收费 歌曲链接<br/>具体使用方法参见：<a href=\"https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic\" target=\"_blank\">GitHub @UnblockNeteaseMusic/luci-app-unblockneteasemusic</a>")
 
 m:section(SimpleSection).template = "unblockneteasemusic/status"
