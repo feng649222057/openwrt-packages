@@ -1,34 +1,3 @@
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kenzok8&show_icons=true&theme=radical)
-<div align="center">
-<h1 align="center"openwrt-packages</h1>
-<img src="https://img.shields.io/github/issues/kenzok8/openwrt-packages?color=green">
-<img src="https://img.shields.io/github/stars/kenzok8/openwrt-packages?color=yellow">
-<img src="https://img.shields.io/github/forks/kenzok8/openwrt-packages?color=orange">
-<img src="https://img.shields.io/github/languages/code-size/kenzok8/openwrt-packages?color=blueviolet">
-</div>
-
-<img src="https://v2.jinrishici.com/one.svg?font-size=24&spacing=2&color=Black">
-
-#### 说明 
-
-<br>中文 | [English](README_en.md)
-
-* 喜欢追新的可以去下载small-package，该仓库每天自动同步更新
-
-* [small-package仓库地址](https://github.com/kenzok8/small-package) 
-
-* 软件不定期同步大神库更新，适合一键下载用于openwrt编译
-
-
-##### 插件每日更新下载:
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/kenzok8/compile-package?style=for-the-badge&label=插件更新下载)](https://github.com/kenzok8/compile-package/releases/latest)
-
-+ [passwall依赖](https://github.com/kenzok8/small)
-
-+ [xiaorouji仓库](https://github.com/xiaorouji/openwrt-passwall)
-
-+ [openwrt固件与插件下载](https://op.dllkids.xyz/op/firmware/)
-
 #### 使用
 一键命令
 ```yaml
@@ -40,49 +9,37 @@ git pull
 make menuconfig
 ```
 
-- openwrt 固件编译自定义主题与软件
+- OpenWrt 固件编译自定义主题与软件
 
-| 软件名                       | 说明                   | 中文说明    |
-| -----------------------------|------------------------| ------------|
-| luci-app-vssr                | vssr proxy                 | vssr老竭力代理软件        |
-| luci-app-dnsfilter           | dns ad filtering            | 基于DNS的广告过滤        |
-| luci-app-openclash           | openclash proxy            |  clash的图形代理软件      |
-| luci-app-advanced            | System advanced settings               | 系统高级设置        |
-| luci-app-pushbot             | WeChat/DingTalk Pushed plugins    |   微信/钉钉推送        |
-| luci-theme-atmaterial_new    | atmaterial theme (adapted to luci-18.06) | Atmaterial 三合一主题        |
-| luci-app-aliddns             | aliyunddns         |   阿里云ddns插件      |
-| luci-app-eqos                | Speed ​​limit by IP address       | 依IP地址限速      |
-| luci-app-gost                | https proxy      | 隐蔽的https代理   |
-| luci-app-adguardhome         | Block ads          |  AdG去广告      |
-| luci-app-smartdns            | smartdns dns pollution prevention     |  smartdns DNS防污染       |
-| luci-app-passwall            | passwall proxy      | passwall代理软件        |
-| luci-theme-argonne           | argonne theme           | 修改老竭力主题名     |
-| luci-app-argonne-config      | argonne theme settings            |  argonne主题设置      |
-| luci-app-ssr-plus            | ssr-plus proxy              | ssr-plus 代理软件       |
-| luci-theme-mcat              | Modify topic name          |   mcat主题        |
-| luci-theme-tomato            | Modify topic name             |  tomato主题        |
-| luci-theme-neobird           | neobird theme          | neobird主题        |
-| luci-app-mosdns              | mosdns dns offload            |DNS 国内外分流解析与广告过滤        |
-| luci-app-store               | store software repository            |  应用商店   |
-| luci-app-unblockneteasemusic | Unlock NetEase Cloud Music         | 解锁网易云音乐   |
-| luci-app-aliyundrive-webdav  | Aliyun Disk WebDAV Service            |  阿里云盘 WebDAV 服务   |
-| luci-app-amlogic  | Amlogic Service             |  晶晨宝盒   |
-* 修改argon为argonne，包括argonne-config，为防止同名argon，而影响编译
-
-![暗黄主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-9.jpg)
-![暗黄主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-10.jpg)
-![暗黄主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-11.jpg)
-![暗黑红主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-5.jpg)
-![暗黑红主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-6.jpg)
-![暗黑红主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-7.jpg)
-![暗黑红主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-8.jpg)
-![抹茶绿主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-12.jpg)
-![抹茶绿主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-13.jpg)
-![抹茶绿主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-14.jpg)
-![argon主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-1.png)
-![argon主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-2.png)
-![修复tomto不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-719.png)
-![修复tomto不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-722.png)
-![修复cat不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-720.png)
-![修复cat不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-721.png)
-
+| 软件名称                      | 菜单名称         | 中文说明             |
+| -----------------------------|-----------------|---------------------|
+| luci-app-accesscontrol       | 时长控制         | 时长控制             |
+| luci-app-adbyby-plus         | 广告屏蔽Plus     | 广告屏蔽Plus         |
+| luci-app-arpbind             | IP/MAC绑定      | IP/MAC绑定           |
+| luci-app-autoreboot          | 定时重启         | 定时重启             |
+| luci-app-ddns                | 动态域名         | 动态域名             |
+| luci-app-diskman             | 磁盘管理         | 磁盘管理             |
+| luci-app-eqos                | IP地址限速       | IP地址限速           |
+| luci-app-filetransfer        | 文件传输         | 文件传输             |
+| luci-app-firewall            | 防火墙           | 防火墙              |
+| luci-app-frpc                | FRP客户端        | FRP客户端           |
+| luci-app-netspeedtest        | 宽带测速         | 宽带测速             |
+| luci-app-nlbwmon             | 带宽监控         | 带宽监控             |
+| luci-app-oaf                 | 应用过滤         | 应用过滤             |
+| luci-app-onliner             | 在线用户         | 在线用户             |
+| luci-app-openclash           | OpenClash       | OpenClash           |
+| luci-app-openvpn-server      | OpenVPN         | OpenVPN             |
+| luci-app-ramfree             | 内存释放         | 内存释放             |
+| luci-app-samba4              | 网络共享         | 网络共享             |
+| luci-app-sqm                 | 流量队列QoS      | 流量队列QoS          |
+| luci-app-statistics          | 监控统计         | 监控统计             |
+| luci-app-store               | 应用商店         | 应用商店             |
+| luci-app-ttyd                | TTYD终端        | TTYD终端             |
+| luci-app-turboacc            | 网络加速         | 网络加速             |
+| luci-app-unblockmusic        | 网易云解锁       | 网易云解锁            |
+| luci-app-upnp                | 端口转发         | 端口转发             |
+| luci-app-vlmcsd              | KMS服务器        | KMS服务器            |
+| luci-app-watchcat            | 延时重启         | 延时重启             |
+| luci-app-wizard              | 设置向导         | 设置向导             |
+| luci-app-wrtbwmon            | 流量统计         | 流量统计             |
+| luci-app-zerotier            | ZeroTier        | ZeroTier            |
