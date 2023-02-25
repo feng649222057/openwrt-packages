@@ -393,7 +393,7 @@ msgid "Port for apcupsd communication"
 msgstr "apcupsd 通信端口"
 
 msgid "Processes"
-msgstr "进程"
+msgstr "系统进程"
 
 msgid "Processes Plugin Configuration"
 msgstr "进程插件配置"
