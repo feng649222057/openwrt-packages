@@ -1,6 +1,6 @@
 --[[
 LuCI - Lua Configuration Partition Expansion
- Copyright (C) 2022  sirpdboy <herboy2008@gmail.com> https://github.com/sirpdboy/luci-app-partexp
+ Copyright (C) 2022  sirpdboy <herboy2008@gmail.com> https://github.com/sirpdboy/partexp
 ]]--
 require "luci.util"
 local name = 'partexp'
@@ -8,9 +8,9 @@ local name = 'partexp'
 module("luci.controller.partexp", package.seeall)
 function index()
 	entry({"admin","system","partexp"},alias("admin", "system", "partexp", "global"),_("Partition Expansion"), 54)
---	entry({"admin", "system", "partexp", "global"}, form("partexp/global"), nil).leaf = true
 	entry({"admin", "system", "partexp", "global"}, cbi('partexp/global', {hideapplybtn = true, hidesavebtn = true, hideresetbtn = true}), _('Partition Expansion'), 10).leaf = true 
 	entry({"admin", "system", "partexp","partexprun"}, call("partexprun")).leaf = true
+	-- entry({"admin", "system", "partexp", "realtime_log"}, call("get_log")) 
 end
 
 function get_log()

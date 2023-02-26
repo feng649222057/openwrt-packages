@@ -32,7 +32,7 @@ end
 
 local m,t,e
 m = Map("partexp", "<font color='green'>" .. translate("One click partition expansion mounting tool") .."</font>",
-translate( "Automatically format and mount the target device partition. If there are multiple partitions, it is recommended to manually delete all partitions before using this tool.<br/>For specific usage, see:") ..translate("<a href=\'https://github.com/sirpdboy/luci-app-partexp.git' target=\'_blank\'>GitHub @sirpdboy</a>") )
+translate( "Automatically format and mount the target device partition. If there are multiple partitions, it is recommended to manually delete all partitions before using this tool.<br/>For specific usage, see:") ..translate("<a href=\'https://github.com/sirpdboy/luci-app-partexp.git' target=\'_blank\'>GitHub @sirpdboy:luci-app-partexp</a>") )
 
 t=m:section(TypedSection,"global")
 t.anonymous=true
@@ -52,11 +52,11 @@ for i, d in ipairs(devices) do
 	end
 end
 
-o=t:option(Flag,"keep_config",translate("Keep configuration"))
+o=t:option(Flag,"keep_config",translate("Keep configuration"),translate("Tick means to retain the settings"))
 o:depends("target_function", "/overlay")
 o.default=0
 
-o=t:option(Flag,'auto_format', translate('Format before use'))
+o=t:option(Flag,'auto_format', translate('Format before use'),translate("Ticking indicates formatting"))
 o:depends("target_function", "/opt")
 o:depends("target_function", "/dev")
 o.default=0
