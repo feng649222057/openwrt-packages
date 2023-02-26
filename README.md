@@ -36,12 +36,11 @@ make menuconfig
 | luci-app-partexp        |   分区扩容    |
 | luci-app-samba4         |   网络共享    |
 | luci-app-sqm            |   流量QoS   |
-| luci-app-statistics     |   监控统计    |
 | luci-app-store          |   应用商店    |
 | luci-app-ttyd           |  TTYD终端   |
 | luci-app-turboacc       |   网络加速    |
 | luci-app-unblockmusic   |   网易云解锁   |
-| luci-app-upnp           |   端口转发    |
+| luci-app-upnp           |   动态端口    |
 | luci-app-vlmcsd         |  KMS服务器   |
 | luci-app-wizard         |   设置向导    |
 | luci-app-wrtbwmon       |   流量统计    |
