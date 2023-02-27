@@ -34,7 +34,6 @@ make menuconfig
 | luci-app-openvpn-server |   OpenVPN   |
 | luci-app-parentcontrol  |    家长控制     |
 | luci-app-partexp        |    分区扩容     |
-| luci-app-poweroffdevice |    关机功能     |
 | luci-app-samba4         |    网络共享     |
 | luci-app-sqm            |    流量QoS    |
 | luci-app-store          |    应用商店     |
