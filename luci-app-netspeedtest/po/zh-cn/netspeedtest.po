@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Pootle 2.0.6\n"
 
 msgid "Net Speedtest"
-msgstr "网速测速"
+msgstr "网速测试"
 
 msgid "Network speed diagnosis test (including intranet and extranet)<br/>For specific usage, see:"
 msgstr "网络速度诊断测试（包括内网、外网、特定端口服务器测速）<br/>使用说明见:"

@@ -67,7 +67,7 @@ function fileassistant_delete()
     local path = luci.http.formvalue("path")
     local isdir = luci.http.formvalue("isdir")
     path = path:gsub("<>", "/")
-    path = path:gsub(" ", "\\ ")
+    path = path:gsub(" ", "\ ")
     local success
     if isdir then
         success = os.execute('rm -r "'..path..'"')
@@ -89,7 +89,7 @@ function fileassistant_install()
     local isdir = luci.http.formvalue("isdir")
     local ext = filepath:match(".+%.(%w+)$")
     filepath = filepath:gsub("<>", "/")
-    filepath = filepath:gsub(" ", "\\ ")
+    filepath = filepath:gsub(" ", "\ ")
     local success
     if isdir == "1" then
         success = false  
